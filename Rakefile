@@ -1,3 +1,5 @@
+task :default => :serve
+
 desc "Start serving the presentation on localhost:9090" 
 task :serve do
   sh "bundle exec showoff serve"
