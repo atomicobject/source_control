@@ -1,7 +1,7 @@
 !SLIDE
 # What is Source Control #
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # Our definition: #
 
 * "Process and tools that let you obtain the latest code for your project, then 
@@ -17,7 +17,7 @@ merge and store your updates in the code repository"
 !SLIDE center
 # Subversion, Git, Mercurial, Darcs, CVS #
 
-![whatever][/sc_logos.png]
+![whatever](sc_logos.png)
 
 !SLIDE
 # Check This Code #
