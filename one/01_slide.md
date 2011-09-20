@@ -1,4 +1,5 @@
 !SLIDE
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 # What is Source Control #
 
 !SLIDE bullets incremental
