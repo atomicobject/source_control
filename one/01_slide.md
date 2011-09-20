@@ -7,3 +7,8 @@
 * first point
 * second point
 * third point
+
+!SLIDE
+# Check This Code #
+    @@@ Ruby
+    code_here()
