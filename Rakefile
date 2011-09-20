@@ -9,3 +9,10 @@ desc "Install necessary ruby gems to support the presentation"
 task :install do
   sh "bundle install"
 end
+
+desc "Generate static version"
+task :static do
+  sh "bundle exec showoff static"
+end
+
+task :build => :static
