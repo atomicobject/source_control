@@ -15,4 +15,12 @@ task :static do
   sh "bundle exec showoff static"
 end
 
+desc "Checkout the SVN sample repo"
+task :svn_co do
+  mkdir_p "hideaway"
+  cd "hideaway" do
+    sh "svn co https://svn.atomicobject.com/svn/crosby/esc"
+  end
+end
+
 task :build => :static
