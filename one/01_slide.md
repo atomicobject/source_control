@@ -98,10 +98,6 @@ Committed revision 1599.
 !SLIDE
 # Integration with modern tool ecosystem
 
-!SLIDE
-# Continuous integration
-## not really useful without SC
-
 !SLIDE incremental
 # Publish
 
