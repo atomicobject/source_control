@@ -11,14 +11,21 @@ merge and store your updates in the code repository"
 !SLIDE bullets
 # Other definitions: #
 
-* "Revision Control"
-* "Version Control"
+* "Revision control"
+* "Version control"
 * "Software configuration management"
 
-!SLIDE center
-# Subversion, Git, Mercurial, Darcs, CVS #
+!SLIDE
+# Stuffy terms, wrong focus #
 
-![whatever](sc_logos.png)
+!SLIDE incremental
+
+"The management of changes to documents, programs, and other information stored as computer files."
+
+yawn
+
+!SLIDE center
+![Subversion, Git, Mercurial, Darcs, CVS](sc_logos.png)
 
 !SLIDE
 # Check This Code #
