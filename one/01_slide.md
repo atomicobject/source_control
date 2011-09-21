@@ -193,6 +193,14 @@ Committed revision 1599.
 # svn up (more later) #
 * Conflicts
 
+
+
+!SLIDE 
+# Conflict Resolution #
+* Look for conflict markers
+* Edit code
+* Commit
+
 !SLIDE incremental bullets
 # Fancy stuff?
 * Branching
@@ -202,12 +210,18 @@ Committed revision 1599.
 !SLIDE incremental bullets
 # (Not today)
 
+!SLIDE subsection
+# Git
+* Our other first choice
 
-!SLIDE 
-# Conflict Resolution #
-* Look for conflict markers
-* Edit code
-* Commit
+!SLIDE subsection
+# Git Advantages
+* 
+
+!SLIDE subsection
+# Git = Independence
+* no network, no server, no perms
+
 
 !SLIDE 
 # This presentation #
