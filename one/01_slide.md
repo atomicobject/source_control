@@ -18,14 +18,18 @@ merge and store your updates in the code repository"
 !SLIDE
 # Stuffy terms, wrong focus #
 
-!SLIDE incremental
-
-"The management of changes to documents, programs, and other information stored as computer files."
-
-yawn
+!SLIDE bullets incremental
+* "The management of changes to documents, programs, and other information stored as computer files."
+* *yawn*
 
 !SLIDE center
 ![Subversion, Git, Mercurial, Darcs, CVS](sc_logos.png)
+
+!SLIDE incremental bullets
+    svn co [output]
+    svn diff [output]
+    svn log [output]
+    svn ci [output]
 
 !SLIDE
 # Check This Code #
