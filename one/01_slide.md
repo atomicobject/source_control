@@ -18,14 +18,11 @@
 !SLIDE bullets incremental
 # Our definition: #
 
-* "Process and tools that let you obtain the latest code for your project, then 
-merge and store your updates in the code repository"
 * "Process and tools to obtain the latest code for your project, then merge and store your changes in the code repository"
 
 !SLIDE center
 # Choices
 ![Subversion, Git, Mercurial, Darcs](sc_logos.png)
-
 
 !SLIDE
 # Subversion Samples 
