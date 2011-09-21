@@ -23,9 +23,12 @@
 * "Process and tools that let you obtain the latest code for your project, then 
 merge and store your updates in the code repository"
 
+!SLIDE center
+# Choices
+![Subversion, Git, Mercurial, Darcs](sc_logos.png)
 
 !SLIDE
-# Quick samples 
+# Subversion Samples 
 
 !SLIDE
 # svn checkout #
@@ -68,9 +71,6 @@ Transmitting file data .
 Committed revision 1599.
 </pre>
 
-!SLIDE center
-# Choices
-![Subversion, Git, Mercurial, Darcs](sc_logos.png)
 
 !SLIDE incremental
 # Significance in software development
