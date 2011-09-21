@@ -1,3 +1,6 @@
+!SLIDE center
+![Atomic Object](AO-wordmark-color.png)
+
 !SLIDE subsection
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 # What is Source Control #
@@ -158,7 +161,7 @@ Committed revision 1599.
 * Games
 * Language / tool exploration
 
-!SLIDE incremental bullets
+!SLIDE bullets
 # Atomic OSS
 * http://github.com/atomicobject
 * (SourceForge / RubyForge)
