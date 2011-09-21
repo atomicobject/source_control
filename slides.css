@@ -1,3 +1,7 @@
 .content {
   font-family: 'Comfortaa', 'Gill Sans', Calibri, Tahoma;
 }
+
+.subsection h1 {
+  background-color: #00AAA1;
+}
