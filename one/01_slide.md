@@ -166,7 +166,7 @@ Committed revision 1599.
 * http://github.com/atomicobject
 * (SourceForge / RubyForge)
 
-!SLIDE 
+!SLIDE subsection
 # Subversion
 ## A day in the life
 
@@ -193,21 +193,32 @@ Committed revision 1599.
 # svn up (more later) #
 * Conflicts
 
+!SLIDE incremental bullets
+# Fancy stuff?
+* Branching
+* History
+* Revert
+
+!SLIDE incremental bullets
+# (Not today)
+
+
 !SLIDE 
 # Conflict Resolution #
 * Look for conflict markers
 * Edit code
 * Commit
 
-!SLIDE small
-# LINKS! #
-* atomicobject.github.com/source\_control
+!SLIDE 
+# This presentation #
+## atomicobject.github.com/source\_control
 
 !SLIDE
 # SVN Command ref / tutorials #
 
 !SLIDE
 # Git ref / tutorials #
+* TODO
 
 !SLIDE
 # Tools we used to build this preso: #
@@ -215,4 +226,6 @@ Committed revision 1599.
 * checkvist.com
 * google.com/webfonts
 
-
+!SLIDE
+# Thanks!
+* atomicobject.com/jobs
