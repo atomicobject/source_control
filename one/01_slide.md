@@ -1,4 +1,4 @@
-!SLIDE
+!SLIDE subsection
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 # What is Source Control #
 
@@ -115,7 +115,7 @@ Committed revision 1599.
 * solicit input, feedback, criticism
 * patches, forks, pull requests
 
-!SLIDE incremental bullets
+!SLIDE incremental bullets subsection
 # How Atomic uses source control
 
 !SLIDE incremental bullets
