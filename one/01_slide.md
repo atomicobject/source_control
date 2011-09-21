@@ -72,8 +72,11 @@ Committed revision 1599.
 </pre>
 
 
-!SLIDE incremental
+!SLIDE subsection
 # Significance in software development
+
+!SLIDE incremental
+# Source control is
 * Pervasive, intrinsic
 * Ubiquitous but varied
 
@@ -83,10 +86,37 @@ Committed revision 1599.
 
 !SLIDE incremental
 # Why?
-* track and document
-* protect / recover
-* work with others
-* find in future
+* Track and document
+* Protect or recover
+* Work with others
+* Find in future
+
+!SLIDE incremental
+# Backups aren't good enough
+* Time passes
+* Easy for discipline to lapse
+* branch / diff / merge
+* Being strict still means only one operation: revert
+
+!SLIDE
+# Integration with modern tool ecosystem
+
+!SLIDE
+# Continuous integration
+## not really useful without SC
+
+!SLIDE incremental
+# Publish
+
+* SourceForge
+* Github
+* Google Code
+
+!SLIDE incremental
+# Share
+
+* solicit input, feedback, criticism
+* patches, forks, pull requests
 
 !SLIDE 
 # Subversion
