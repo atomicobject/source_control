@@ -24,6 +24,9 @@
 merge and store your updates in the code repository"
 
 
+!SLIDE
+# Quick samples 
+
 !SLIDE commandline incremental
 $ svn checkout
 
