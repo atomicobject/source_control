@@ -2,9 +2,7 @@
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 # What is Source Control #
 
-!SLIDE bullets
-# Other definitions: #
-
+!SLIDE bullets incremental
 * "Revision control"
 * "Version control"
 * "Software configuration management"
@@ -20,9 +18,7 @@
 !SLIDE bullets incremental
 # Our definition: #
 
-* "Process and tools that let you obtain the latest code for your project, then 
-merge and store your updates in the code repository"
-
+* "Process and tools to obtain the latest code for your project, then merge and store your changes in the code repository"
 
 !SLIDE
 # Quick samples 
@@ -53,26 +49,16 @@ $ svn checkin
 # Code goes in SC.
 * *Always.*
 
-!SLIDE
+!SLIDE incremental
 # Why?
 * track and document
 * protect / recover
 * work with others
 * find in future
 
-!SLIDE incremental bullets
-    svn co [output]
-    svn diff [output]
-    svn log [output]
-    svn ci [output]
-
-!SLIDE
-# Check This Code #
-    @@@ Ruby
-    code_here()
-
 !SLIDE 
-# SVN: A day in the life #
+# Subversion
+## A day in the life
 
 !SLIDE 
 # svn up #
@@ -103,9 +89,9 @@ $ svn checkin
 * Edit code
 * Checkin
 
-!SLIDE
+!SLIDE small
 # LINKS! #
-* http://atomicobject.github.com/source\_control
+* atomicobject.github.com/source\_control
 
 !SLIDE
 # SVN Command ref / tutorials #
@@ -115,8 +101,8 @@ $ svn checkin
 
 !SLIDE
 # Tools we used to build this preso: #
-* http://github.com/shacon/showoff
-* http://checkvist.com
-* (Google web fonts)
+* github.com/shacon/showoff
+* checkvist.com
+* google.com/webfonts
 
 
