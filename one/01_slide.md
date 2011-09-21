@@ -86,20 +86,18 @@ Committed revision 1599.
 
 !SLIDE incremental
 # Why?
+* Store and backup code
+* Collaborate
 * Track and document
-* Protect or recover
-* Work with others
-* Find in future
 
 !SLIDE incremental
 # Backups aren't good enough
 * Time passes
 * Easy for discipline to lapse
-* branch / diff / merge
-* Being strict still means only one operation: revert
+* branch / diff / merge: manual, too hard
 
 !SLIDE
-# Integration with modern tool ecosystem
+# The rest of the world
 
 !SLIDE incremental
 # Publish
@@ -123,7 +121,7 @@ Committed revision 1599.
 * Older SVN repositories 
 * (still use both systems)
 
-!SLIDE incremental bullets
+!SLIDE bullets
 # All code is under CI
 * (Continuous Integration)
 * Watches our repositories for changes
@@ -135,7 +133,7 @@ Committed revision 1599.
 * Web tools for discovering and exploring repos
 
 !SLIDE incremental bullets
-# Command-line tools
+# Prefer command-line tools
 * SVN and Git have some nice GUI interfaces
 * Sometimes handy for odd cases, conflicts, etc
 * ...but we use these tools SO MUCH
@@ -148,7 +146,7 @@ Committed revision 1599.
 * Punching out with uncommitted code is a NO NO
 
 !SLIDE incremental bullets
-# What else besides code?
+# Not just for code
 * Sales proposals
 * Invoices and POs
 * Critical internal documents
@@ -170,7 +168,10 @@ Committed revision 1599.
 # Subversion
 ## A day in the life
 
-!SLIDE 
+!SLIDE
+# svn st #
+
+!SLIDE
 # svn up #
 
 !SLIDE 
