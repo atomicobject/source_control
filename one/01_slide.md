@@ -27,18 +27,46 @@ merge and store your updates in the code repository"
 !SLIDE
 # Quick samples 
 
-!SLIDE commandline incremental
-$ svn checkout
+!SLIDE
+# svn checkout #
 
 !SLIDE commandline incremental
-$ svn diff
+<pre style="font-size: 24pt">
+$ svn checkout https://svnserver/sample_proj
 
-!SLIDE commandline incremental
+A    sample_proj/README.txt
+A    sample_proj/Hello.java
+</pre>
+
+!SLIDE
+# svn log #
+
+!SLIDE
+<pre style="font-size: 16pt">
 $ svn log
 
-!SLIDE commandline incremental
-$ svn checkin
+------------------------------------------------------------------------
+r1598 | crosby | 2011-09-20 20:27:47 -0400 (Tue, 20 Sep 2011) | 1 line
 
+Sketched Hello.java
+------------------------------------------------------------------------
+r1597 | crosby | 2011-09-20 19:55:48 -0400 (Tue, 20 Sep 2011) | 1 line
+
+Starting SVN sample for Everyday Source Control
+------------------------------------------------------------------------
+</pre>
+
+!SLIDE
+# svn commit #
+
+!SLIDE 
+<pre style="font-size: 16pt">
+$ svn ci -m "Added CHANGELOG area to README.txt"
+
+Sending        README.txt
+Transmitting file data .
+Committed revision 1599.
+</pre>
 
 !SLIDE center
 # Choices
