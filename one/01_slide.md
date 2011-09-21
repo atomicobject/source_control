@@ -102,7 +102,7 @@ Committed revision 1599.
 # svn up (again) #
 
 !SLIDE 
-# svn checkin -m#
+# svn commit -m#
 
 !SLIDE 
 # svn up (later) #
@@ -116,7 +116,7 @@ Committed revision 1599.
 # Conflict Resolution #
 * Look for conflict markers
 * Edit code
-* Checkin
+* Commit
 
 !SLIDE small
 # LINKS! #
