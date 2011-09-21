@@ -85,6 +85,58 @@ Committed revision 1599.
 * work with others
 * find in future
 
+!SLIDE incremental bullets
+# How Atomic uses source control
+
+!SLIDE incremental bullets
+# All code is in source control
+* In-house Gitorious server
+* Older SVN repositories 
+* (still use both systems)
+
+!SLIDE incremental bullets
+# All code is under CI
+* (Continuous Integration)
+* Watches our repositories for changes
+* No SC => No CI
+
+!SLIDE incremental bullets
+# All repos available to all employees
+* ...and sometimes the customer
+* Web tools for discovering and exploring repos
+
+!SLIDE incremental bullets
+# Command-line tools
+* SVN and Git have some nice GUI interfaces
+* Sometimes handy for odd cases, conflicts, etc
+* ...but we use these tools SO MUCH
+
+!SLIDE incremental bullets
+# Always up-to-date
+* You have the latest code to work on
+* ...so do your coworkers
+* (Don't be stingy)
+* Punching out with uncommitted code is a NO NO
+
+!SLIDE incremental bullets
+# What else besides code?
+* Sales proposals
+* Invoices and POs
+* Critical internal documents
+* Electronic books
+
+!SLIDE incremental bullets
+# Personal use
+* We all have repos
+* Intra-office collaboration (RSS!)
+* Games
+* Language / tool exploration
+
+!SLIDE incremental bullets
+# Atomic OSS
+* http://github.com/atomicobject
+* (SourceForge / RubyForge)
+
 !SLIDE 
 # Subversion
 ## A day in the life
