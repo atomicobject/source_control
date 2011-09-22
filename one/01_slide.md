@@ -61,7 +61,7 @@
 !SLIDE
 # The rest of the world
 
-!SLIDE incremental
+!SLIDE
 # Publish
 
 * SourceForge
