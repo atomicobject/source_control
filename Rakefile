@@ -17,7 +17,7 @@ end
 
 desc "Build and publish to Github"
 task :github do
-  sh "bundle exec showoff github"
+  sh "bundle exec showoff github && git push origin gh-pages"
 end
 
 desc "Checkout the SVN sample repo"
