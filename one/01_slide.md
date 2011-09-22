@@ -1,5 +1,6 @@
 !SLIDE center
 ![Atomic Object](AO-wordmark-color.png)
+## Everyday Source Control
 
 !SLIDE subsection
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
@@ -28,8 +29,8 @@
 ![Subversion, Git, Mercurial, Darcs](sc_logos.png)
 
 !SLIDE
-# Today: Subversion
 ![svn](subversion.jpg)
+# Today: Subversion
 
 !SLIDE bullets
 ![git](oreilly_git.jpeg)
@@ -50,9 +51,9 @@
 
 !SLIDE incremental
 # Why?
-* Store and backup code
-* Collaborate
 * Track and document
+* Collaborate
+* Store and backup code
 
 !SLIDE incremental
 ![db](drobo.png)
@@ -404,9 +405,9 @@ Our other first choice
 
 !SLIDE 
 # This presentation #
-## atomicobject.github.com/source\_control
+## [atomicobject.github.com/source\_control](http://atomicobject.github.com/source\_control)
 
-!SLIDE smaller
+!SLIDE 
 # SVN
 * [svn book](http://svnbook.red-bean.com/en/1.6/svn-book.html)
 * [svn Quick Reference Card](http://www.collab.net/community/subversion/articles/SvnQuickReferenceCard.html)
@@ -418,11 +419,12 @@ Our other first choice
 
 !SLIDE
 # Tools we used to build this preso: #
-* github.com/shacon/showoff
-* checkvist.com
-* google.com/webfonts
+* [showoff](http://github.com/shacon/showoff)
+* [Checkvist](http://checkvist.com)
+* [Google WebFonts](http://google.com/webfonts)
 
-!SLIDE incremental bullets
+!SLIDE bullets
 # Thanks!
-* (btw, Atomic runs a cool summer internship program)
-* atomicobject.com/jobs
+* {karlin,dave}@atomicobject.com
+* need a summer internship?
+* [atomicobject.com/jobs](http://atomicobject.com/jobs)
