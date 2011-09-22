@@ -29,8 +29,10 @@
 
 !SLIDE
 # Today: Subversion
+![svn](subversion.jpg)
 
 !SLIDE bullets
+![git](oreilly_git.jpeg)
 # Later: Git
 * (We use it a lot)
 
@@ -53,12 +55,11 @@
 * Track and document
 
 !SLIDE incremental
+![db](drobo.png)
 # Backups aren't good enough
-* Time passes
-* Easy for discipline to lapse
-* branch / diff / merge: manual, too hard
 
 !SLIDE
+![cats](socialite.jpg)
 # The rest of the world
 
 !SLIDE
@@ -172,9 +173,10 @@
 !SLIDE incremental bullets
 # (Not today)
 
-!SLIDE subsection
+!SLIDE subsection center
+![collabcats](collabcats.jpg)
 # Git
-* Our other first choice
+Our other first choice
 
 !SLIDE 
 # Git Advantages
@@ -192,12 +194,15 @@
 # This presentation #
 ## atomicobject.github.com/source\_control
 
-!SLIDE
-# SVN Command ref / tutorials #
+!SLIDE smaller
+# SVN
+* [svn book](http://svnbook.red-bean.com/en/1.6/svn-book.html)
+* [svn Quick Reference Card](http://www.collab.net/community/subversion/articles/SvnQuickReferenceCard.html)
 
 !SLIDE
-# Git ref / tutorials #
-* TODO
+# Git
+* [gitready](http://gitready.com)
+* [gitref](http://gitref.org)
 
 !SLIDE
 # Tools we used to build this preso: #
