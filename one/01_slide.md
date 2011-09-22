@@ -261,7 +261,7 @@ Updated to revision 1603.
 $ svn log
 
 ------------------------------------------------------------------------
-r1603 | crosby | 2011-09-22 00:22:34 -0400 (Thu, 22 Sep 2011) | 2 lines
+r1603 | fox    | 2011-09-22 00:22:34 -0400 (Thu, 22 Sep 2011) | 2 lines
 
 Added separators above and below the hello msg
 
@@ -386,6 +386,27 @@ M       Hello.java
 !SLIDE incremental bullets
 # (Another day)
 
+!SLIDE smaller bullets
+# Creating a local SVN repository
+<pre style="font-size: 16pt">
+$ mkdir -p repo
+$ mkdir -p template/branches; mkdir template/tags; mkdir template/trunk
+$ svnadmin create repo/new_project
+$ svn import -m "Starting new_project" template file:///Users/dcrosby42/
+repo/new_project
+Adding         template/trunk
+Adding         template/branches
+Adding         template/tags
+
+Committed revision 1.
+
+$ svn co file:///Users/dcrosby42/repo/new_project/trunk new_project
+Checked out revision 1.
+$ cd new_project/
+</pre>
+* STAY OUT OF repo/ !!!
+* (Delete template/)
+
 !SLIDE subsection center
 ![collabcats](collabcats.jpg)
 # Git
@@ -427,6 +448,7 @@ Our other first choice
 * [showoff](http://github.com/shacon/showoff)
 * [Checkvist](http://checkvist.com)
 * [Google WebFonts](http://google.com/webfonts)
+* [Github](http://github.com/atomicobject/source_control)
 
 !SLIDE bullets
 # Thanks!
