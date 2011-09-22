@@ -242,7 +242,7 @@ Committed revision 1602.
 
 !SLIDE bullets
 # But later...
-* We merge some changes from the server
+* You bring down some changes from the server
 
 !SLIDE bullets
 # svn update
@@ -391,14 +391,19 @@ M       Hello.java
 # Git
 Our other first choice
 
-!SLIDE 
+!SLIDE incremental bullets
 # Git Advantages
-* TODO
+* Branch / merging heaven
+* Distributed development path
+* Popular, social
+* FAST
 
-!SLIDE 
+!SLIDE incremental bullets
 # Git = Independence
-* no network, no server, no perms
-* TODO moar?
+* no network
+* no server
+* no perms
+* ...until you're ready
 
 !SLIDE subsection
 # Links
