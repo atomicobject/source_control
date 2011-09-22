@@ -2,6 +2,10 @@
   font-family: 'Comfortaa', 'Gill Sans', Calibri, Tahoma;
 }
 
+.content a {
+  color: #597B7C;
+}
+
 .subsection h1 {
   background-color: #00AAA1;
 }

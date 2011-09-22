@@ -28,8 +28,8 @@
 ![Subversion, Git, Mercurial, Darcs](sc_logos.png)
 
 !SLIDE
-# Today: Subversion
 ![svn](subversion.jpg)
+# Today: Subversion
 
 !SLIDE bullets
 ![git](oreilly_git.jpeg)
@@ -192,9 +192,9 @@ Our other first choice
 
 !SLIDE 
 # This presentation #
-## atomicobject.github.com/source\_control
+## [atomicobject.github.com/source\_control](http://atomicobject.github.com/source\_control)
 
-!SLIDE smaller
+!SLIDE 
 # SVN
 * [svn book](http://svnbook.red-bean.com/en/1.6/svn-book.html)
 * [svn Quick Reference Card](http://www.collab.net/community/subversion/articles/SvnQuickReferenceCard.html)
@@ -206,11 +206,11 @@ Our other first choice
 
 !SLIDE
 # Tools we used to build this preso: #
-* github.com/shacon/showoff
-* checkvist.com
-* google.com/webfonts
+* [showoff](http://github.com/shacon/showoff)
+* [Checkvist](http://checkvist.com)
+* [Google WebFonts](http://google.com/webfonts)
 
 !SLIDE incremental bullets
 # Thanks!
 * (btw, Atomic runs a cool summer internship program)
-* atomicobject.com/jobs
+* [atomicobject.com/jobs](http://atomicobject.com/jobs)
