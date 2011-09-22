@@ -15,6 +15,11 @@ task :static do
   sh "bundle exec showoff static"
 end
 
+desc "Build and publish to Github"
+task :github do
+  sh "bundle exec showoff github"
+end
+
 desc "Checkout the SVN sample repo"
 task :svn_co do
   mkdir_p "hideaway"

@@ -77,19 +77,23 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
-<div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/1">
+<div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/1">
+<p><img src="./file/one/AO-wordmark-color.png" alt="Atomic Object"/></p>
+
+<h2>Everyday Source Control</h2></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/2">
 <p><link href="http://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet" type="text/css"/>
 
 <h1>What is Source Control</h1></p>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/2">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/3">
 <ul>
 <li>"Revision control"</li>
 <li>"Version control"</li>
 <li>"Software configuration management"</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/3">
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/4">
 <h1>Wikipedia</h1>
 
 <ul>
@@ -97,26 +101,181 @@
 <li><em>yawn</em></li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/4">
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/5">
 <h1>Stuffy terms, wrong focus</h1></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/5">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/6">
 <h1>Our definition:</h1>
 
 <ul>
 <li>"Process and tools to obtain the latest code for your project, then merge and store your changes in the code repository"</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/6">
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/7">
 <h1>Choices</h1>
 
 <p><img src="./file/one/sc_logos.png" alt="Subversion, Git, Mercurial, Darcs"/></p></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/7">
-<h1>Subversion Samples</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/8">
-<h1>svn checkout</h1></div>
-</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/9">
+<p><img src="./file/one/subversion.jpg" alt="svn"/></p>
+
+<h1>Today: Subversion</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/9">
+<p><img src="./file/one/oreilly_git.jpeg" alt="git"/></p>
+
+<h1>Later: Git</h1>
+
+<ul>
+<li>(We use it a lot)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/10">
+<h1>Significance in software development</h1></div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/11">
+<h1>Source control is</h1>
+
+<ul>
+<li>Pervasive, intrinsic</li>
+<li>Ubiquitous but varied</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/12">
+<h1>Code goes in SC.</h1>
+
+<ul>
+<li><em>Always.</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/13">
+<h1>Why?</h1>
+
+<ul>
+<li>Track and document</li>
+<li>Collaborate</li>
+<li>Store and backup code</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/14">
+<p><img src="./file/one/drobo.png" alt="db"/></p>
+
+<h1>Backups aren't good enough</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/15">
+<p><img src="./file/one/socialite.jpg" alt="cats"/></p>
+
+<h1>The rest of the world</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/16">
+<h1>Publish</h1>
+
+<ul>
+<li>SourceForge</li>
+<li>Github</li>
+<li>Google Code</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/17">
+<h1>Share</h1>
+
+<ul>
+<li>solicit input, feedback, criticism</li>
+<li>patches, forks, pull requests</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/18">
+<h1>How Atomic uses source control</h1></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/19">
+<h1>All code is in source control</h1>
+
+<ul>
+<li>Git</li>
+<li>SVN</li>
+<li>(still use both)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/20">
+<h1>All code is under CI</h1>
+
+<ul>
+<li>(Continuous Integration)</li>
+<li>Watches our repositories for changes</li>
+<li>No SC =&gt; No CI</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/21">
+<h1>All repos available to all employees</h1>
+
+<ul>
+<li>...and sometimes the customer</li>
+<li>Web tools for discovering and exploring repos</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/22">
+<h1>Prefer command-line tools</h1>
+
+<ul>
+<li>We want help (and power), not more work!</li>
+<li>(though sometimes a GUI is nice)</li>
+<li>Command-line is simpler (really!)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/23">
+<h1>Always up-to-date</h1>
+
+<ul>
+<li>You have the latest code to work on</li>
+<li>So should your coworkers</li>
+<li>...SO CHECK IT IN!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/24">
+<h1>Not just for "code"</h1>
+
+<ul>
+<li>Sales proposals</li>
+<li>Invoices and POs</li>
+<li>Electronic books</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/25">
+<h1>Personal use</h1>
+
+<ul>
+<li>We all have repos</li>
+<li>Intra-office collaboration (RSS!)</li>
+<li>Games</li>
+<li>Language / tool exploration</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/26">
+<h1>Atomic OSS</h1>
+
+<ul>
+<li>http://github.com/atomicobject</li>
+<li>(SourceForge / RubyForge)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/27">
+<h1>Subversion</h1>
+
+<h2>A day in the life</h2></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/28">
+<h1>Let's skip the beginning</h1>
+
+<ul>
+<li>SVN has 33 commands</li>
+<li>You care about 5 commands</li>
+<li>There's already a repo</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/29">
+<h1>Checkout -&gt; (edit) -&gt; Commit</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/30">
+<h1>svn checkout</h1>
+
+<ul>
+<li>(svn co)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/31">
 <pre style="font-size: 24pt">
-$ svn checkout https://svnserver/sample_proj
+$ svn co https://svnserver/sample_proj
 
 A    sample_proj/README.txt
 A    sample_proj/Hello.java
@@ -124,9 +283,9 @@ A    sample_proj/Hello.java
 
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/10">
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/32">
 <h1>svn log</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/11">
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/33">
 <pre style="font-size: 16pt">
 $ svn log
 
@@ -143,205 +302,377 @@ Starting SVN sample for Everyday Source Control
 
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/12">
-<h1>svn commit</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/13">
-<pre style="font-size: 16pt">
-$ svn ci -m "Added CHANGELOG area to README.txt"
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/34">
+<h1>Edit some code</h1>
 
-Sending        README.txt
-Transmitting file data .
-Committed revision 1599.
+<ul>
+<li>Modify Hello.java to print the time</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/35">
+<h1>Hello.java</h1>
+
+<pre style="font-size: 16pt">
+class Hello {
+  public static void main(String args[]) {
+    System.out.println("Hello, World!");
+  }
+}
 </pre>
 
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/14">
-<h1>Significance in software development</h1></div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/15">
-<h1>Source control is</h1>
-
-<ul>
-<li>Pervasive, intrinsic</li>
-<li>Ubiquitous but varied</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/16">
-<h1>Code goes in SC.</h1>
-
-<ul>
-<li><em>Always.</em></li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/17">
-<h1>Why?</h1>
-
-<ul>
-<li>Track and document</li>
-<li>Protect or recover</li>
-<li>Work with others</li>
-<li>Find in future</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/18">
-<h1>Backups aren't good enough</h1>
-
-<ul>
-<li>Time passes</li>
-<li>Easy for discipline to lapse</li>
-<li>branch / diff / merge</li>
-<li>Being strict still means only one operation: revert</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/19">
-<h1>Integration with modern tool ecosystem</h1></div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/20">
-<h1>Publish</h1>
-
-<ul>
-<li>SourceForge</li>
-<li>Github</li>
-<li>Google Code</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="one/01_slide/21">
-<h1>Share</h1>
-
-<ul>
-<li>solicit input, feedback, criticism</li>
-<li>patches, forks, pull requests</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets subsection" ref="one/01_slide/22">
-<h1>How Atomic uses source control</h1></div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/23">
-<h1>All code is in source control</h1>
-
-<ul>
-<li>In-house Gitorious server</li>
-<li>Older SVN repositories</li>
-<li>(still use both systems)</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/24">
-<h1>All code is under CI</h1>
-
-<ul>
-<li>(Continuous Integration)</li>
-<li>Watches our repositories for changes</li>
-<li>No SC =&gt; No CI</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/25">
-<h1>All repos available to all employees</h1>
-
-<ul>
-<li>...and sometimes the customer</li>
-<li>Web tools for discovering and exploring repos</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/26">
-<h1>Command-line tools</h1>
-
-<ul>
-<li>SVN and Git have some nice GUI interfaces</li>
-<li>Sometimes handy for odd cases, conflicts, etc</li>
-<li>...but we use these tools SO MUCH</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/27">
-<h1>Always up-to-date</h1>
-
-<ul>
-<li>You have the latest code to work on</li>
-<li>...so do your coworkers</li>
-<li>(Don't be stingy)</li>
-<li>Punching out with uncommitted code is a NO NO</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/28">
-<h1>What else besides code?</h1>
-
-<ul>
-<li>Sales proposals</li>
-<li>Invoices and POs</li>
-<li>Critical internal documents</li>
-<li>Electronic books</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/29">
-<h1>Personal use</h1>
-
-<ul>
-<li>We all have repos</li>
-<li>Intra-office collaboration (RSS!)</li>
-<li>Games</li>
-<li>Language / tool exploration</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/30">
-<h1>Atomic OSS</h1>
-
-<ul>
-<li>http://github.com/atomicobject</li>
-<li>(SourceForge / RubyForge)</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/31">
-<h1>Subversion</h1>
-
-<h2>A day in the life</h2></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/32">
-<h1>svn up</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/33">
-<h1>(edit code)</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/34">
-<h1>svn diff</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/35">
-<h1>svn up (again)</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/36">
-<h1>svn commit -m</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/37">
-<h1>svn up (later)</h1>
+<h1>Change that println to:</h1>
+
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/37">
+<h1>svn status</h1>
 
 <ul>
-<li>Nice clean merge</li>
+<li>(svn st)</li>
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/38">
-<h1>svn up (more later)</h1>
+<pre style="font-size: 16pt">
+$ svn st
 
-<ul>
-<li>Conflicts</li>
-</ul>
+M       Hello.java
+</pre>
+
+
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/39">
-<h1>Conflict Resolution</h1>
+<h1>svn diff</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/40">
+<pre style="font-size: 16pt">
+$ svn diff
+
+Index: Hello.java
+===================================================================
+--- Hello.java  (revision 1598)
++++ Hello.java  (working copy)
+@@ -1,5 +1,7 @@
++import java.util.Date;
++
+ class Hello {
+   public static void main(String args[]) {
+-    System.out.println("Hello, World!");
++    System.out.println("Hello, World, the time is " + new Date());
+   }
+ }
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/41">
+<h1>svn commit</h1>
 
 <ul>
-<li>Look for conflict markers</li>
-<li>Edit code</li>
-<li>Commit</li>
+<li>(svn ci)</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content small" ref="one/01_slide/40">
-<h1>LINKS!</h1>
-
-<ul>
-<li>atomicobject.github.com/source_control</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/41">
-<h1>SVN Command ref / tutorials</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/42">
-<h1>Git ref / tutorials</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/43">
+<pre style="font-size: 16pt">
+$ svn ci -m "Printing current date/time along with Hello World"
+
+Sending        Hello.java
+Transmitting file data .
+Committed revision 1602.
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/43">
+<h1>...and you can go home.</h1>
+
+<ul>
+<li>The CI server will build and test</li>
+<li>Everyone else can update to your changes</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/44">
+<h1>But later...</h1>
+
+<ul>
+<li>You bring down some changes from the server</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/45">
+<h1>svn update</h1>
+
+<ul>
+<li>(svn up)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/46">
+<pre style="font-size: 16pt">
+$ svn up
+
+U    Hello.java
+Updated to revision 1603.
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/47">
+<pre style="font-size: 16pt">
+$ svn log
+
+------------------------------------------------------------------------
+r1603 | fox    | 2011-09-22 00:22:34 -0400 (Thu, 22 Sep 2011) | 2 lines
+
+Added separators above and below the hello msg
+
+------------------------------------------------------------------------
+r1602 | crosby | 2011-09-22 00:10:35 -0400 (Thu, 22 Sep 2011) | 1 line
+
+Printing current date/time along with Hello World
+------------------------------------------------------------------------
+r1599 | crosby | 2011-09-20 21:14:12 -0400 (Tue, 20 Sep 2011) | 1 line
+
+Added CHANGELOG area to README.txt
+...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/48">
+<h1>svn diff -rXXXX:YYYY</h1>
+
+<ul>
+<li>Specify revisions to compare</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/49">
+<pre style="font-size: 16pt">
+$ svn diff -r 1602:1603
+
+Index: Hello.java
+===================================================================
+--- Hello.java  (revision 1602)
++++ Hello.java  (revision 1603)
+@@ -2,6 +2,8 @@
+ 
+ class Hello {
+   public static void main(String args[]) {
++    System.out.println("-------------------------------------------------------------------------------");
+     System.out.println("Hello, World, the time is " + new Date());
++    System.out.println("-------------------------------------------------------------------------------");
+   }
+ }
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/50">
+<h1>Append some output</h1>
+
+<pre style="font-size: 16pt">
+    ...
+    System.out.println("Thanks!");
+    ...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/51">
+<h1>Attempt to commit...</h1>
+
+<pre style="font-size: 16pt">
+$ svn ci -m "Added a quick thanks to the end"
+
+Sending        Hello.java
+svn: Commit failed (details follow):
+svn: File or directory 'Hello.java' is out of date; try updating
+svn: resource out of date; try updating
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/52">
+<h1>Update to the latest code...</h1>
+
+<pre style="font-size: 16pt">
+$ svn up
+
+Conflict discovered in 'Hello.java'.
+Select: (p) postpone, (df) diff-full, (e) edit,
+        (mc) mine-conflict, (tc) theirs-conflict,
+        (s) show all options:
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/53">
+<h1>Edit the file</h1>
+
+<h2>(Remove conflict markers)</h2>
+
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+    System.out.println("-------------------------------------------------
+ .mine
+    System.out.println("Thanks!");
+=======
+    System.out.println("Thank you very much.");
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; .r1604
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/54">
+<h1>Decide to keep your changes:</h1>
+
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+    System.out.println("-------------------------------------------------
+    System.out.println("Thanks!");
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/55">
+<h1>Save and exit</h1>
+
+<pre style="font-size: 16pt">
+$ svn st
+
+?       Hello.java.mine
+?       Hello.java.r1603
+?       Hello.java.r1604
+C       Hello.java
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/56">
+<h1>Mark conflict as resolved</h1>
+
+<pre style="font-size: 16pt">
+$ svn resolved Hello.java
+
+Resolved conflicted state of 'Hello.java
+
+
+$ svn st
+
+M       Hello.java
+</pre>
+
+
+<ul>
+<li>(then commit)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/57">
+<h1>Fancy stuff?</h1>
+
+<ul>
+<li>Branching / merging</li>
+<li>History visualization</li>
+<li>svn blame</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/58">
+<h1>(Another day)</h1></div>
+</div><div class="slide" data-transition="none"><div class="content smaller bullets" ref="one/01_slide/59">
+<h1>Creating a local SVN repository</h1>
+
+<pre style="font-size: 16pt">
+$ mkdir -p repo
+$ mkdir -p template/branches; mkdir template/tags; mkdir template/trunk
+$ svnadmin create repo/new_project
+$ svn import -m "Starting new_project" template file:///Users/dcrosby42/
+repo/new_project
+Adding         template/trunk
+Adding         template/branches
+Adding         template/tags
+
+Committed revision 1.
+
+$ svn co file:///Users/dcrosby42/repo/new_project/trunk new_project
+Checked out revision 1.
+$ cd new_project/
+</pre>
+
+
+<ul>
+<li>STAY OUT OF repo/ !!!</li>
+<li>(Delete template/)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection center" ref="one/01_slide/60">
+<p><img src="./file/one/collabcats.jpg" alt="collabcats"/></p>
+
+<h1>Git</h1>
+
+<p>Our other first choice</p></div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/61">
+<h1>Git Advantages</h1>
+
+<ul>
+<li>Branch / merging heaven</li>
+<li>Distributed development path</li>
+<li>Popular, social</li>
+<li>FAST</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental bullets" ref="one/01_slide/62">
+<h1>Git = Independence</h1>
+
+<ul>
+<li>no network</li>
+<li>no server</li>
+<li>no perms</li>
+<li>...until you're ready</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="one/01_slide/63">
+<h1>Links</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/64">
+<h1>This presentation</h1>
+
+<h2><a href="http://atomicobject.github.com/source_control">atomicobject.github.com/source_control</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/65">
+<h1>SVN</h1>
+
+<ul>
+<li><a href="http://svnbook.red-bean.com/en/1.6/svn-book.html">svn book</a></li>
+<li><a href="http://www.collab.net/community/subversion/articles/SvnQuickReferenceCard.html">svn Quick Reference Card</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/66">
+<h1>Git</h1>
+
+<ul>
+<li><a href="http://gitready.com">gitready</a></li>
+<li><a href="http://gitref.org">gitref</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/67">
 <h1>Tools we used to build this preso:</h1>
 
 <ul>
-<li>github.com/shacon/showoff</li>
-<li>checkvist.com</li>
-<li>google.com/webfonts</li>
+<li><a href="http://github.com/shacon/showoff">showoff</a></li>
+<li><a href="http://checkvist.com">Checkvist</a></li>
+<li><a href="http://google.com/webfonts">Google WebFonts</a></li>
+<li><a href="http://github.com/atomicobject/source_control">Github</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/68">
+<h1>Thanks!</h1>
+
+<ul>
+<li>{karlin,dave}@atomicobject.com</li>
+<li>need a summer internship?</li>
+<li><a href="http://atomicobject.com/jobs">atomicobject.com/jobs</a></li>
+<li>Our awesome blog: <a href="http://atomicobject.com/jobs">spin.atomicobject.com</a></li>
 </ul>
 </div>
 </div></div>

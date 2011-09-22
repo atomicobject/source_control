@@ -455,3 +455,5 @@ Our other first choice
 * {karlin,dave}@atomicobject.com
 * need a summer internship?
 * [atomicobject.com/jobs](http://atomicobject.com/jobs)
+* Our awesome blog: [spin.atomicobject.com](http://atomicobject.com/jobs)
+
