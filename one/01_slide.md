@@ -80,9 +80,9 @@
 
 !SLIDE incremental bullets
 # All code is in source control
-* In-house Gitorious server
-* Older SVN repositories 
-* (still use both systems)
+* Git
+* SVN 
+* (still use both)
 
 !SLIDE bullets
 # All code is under CI
@@ -97,16 +97,15 @@
 
 !SLIDE incremental bullets
 # Prefer command-line tools
-* SVN and Git have some nice GUI interfaces
-* Sometimes handy for odd cases, conflicts, etc
-* ...but we use these tools SO MUCH
+* We want help (and power), not more work!
+* (though sometimes a GUI is nice)
+* Command-line is simpler (really!)
 
 !SLIDE incremental bullets
 # Always up-to-date
 * You have the latest code to work on
-* ...so do your coworkers
-* (Don't be stingy)
-* Punching out with uncommitted code is a NO NO
+* So should your coworkers
+* ...SO CHECK IT IN!
 
 !SLIDE incremental bullets
 # Not just for "code"
@@ -130,48 +129,261 @@
 # Subversion
 ## A day in the life
 
-!SLIDE
-# svn st #
+!SLIDE incremental bullets
+# Let's skip the beginning
+* SVN has 33 commands
+* You care about 5 commands
+* There's already a repo
 
 !SLIDE
-# svn up #
+# Checkout -> (edit) -> Commit
+
+!SLIDE bullets
+# svn checkout #
+* (svn co)
+
+!SLIDE commandline incremental
+<pre style="font-size: 24pt">
+$ svn co https://svnserver/sample_proj
+
+A    sample_proj/README.txt
+A    sample_proj/Hello.java
+</pre>
+
+!SLIDE
+# svn log #
+
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn log
+
+------------------------------------------------------------------------
+r1598 | crosby | 2011-09-20 20:27:47 -0400 (Tue, 20 Sep 2011) | 1 line
+
+Sketched Hello.java
+------------------------------------------------------------------------
+r1597 | crosby | 2011-09-20 19:55:48 -0400 (Tue, 20 Sep 2011) | 1 line
+
+Starting SVN sample for Everyday Source Control
+------------------------------------------------------------------------
+</pre>
+
+!SLIDE bullets
+# Edit some code
+* Modify Hello.java to print the time
+
+!SLIDE
+# Hello.java
+<pre style="font-size: 16pt">
+class Hello {
+  public static void main(String args[]) {
+    System.out.println("Hello, World!");
+  }
+}
+</pre>
+
+!SLIDE
+# Change that println to:
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+</pre>
+
+!SLIDE bullets
+# svn status
+* (svn st)
+
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn st
+
+M       Hello.java
+</pre>
+
+!SLIDE
+# svn diff
+
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn diff
+
+Index: Hello.java
+===================================================================
+--- Hello.java	(revision 1598)
++++ Hello.java	(working copy)
+@@ -1,5 +1,7 @@
++import java.util.Date;
++
+ class Hello {
+   public static void main(String args[]) {
+-    System.out.println("Hello, World!");
++    System.out.println("Hello, World, the time is " + new Date());
+   }
+ }
+</pre>
+
+!SLIDE bullets
+# svn commit #
+* (svn ci)
 
 !SLIDE 
-# (edit code) #
+<pre style="font-size: 16pt">
+$ svn ci -m "Printing current date/time along with Hello World"
 
-!SLIDE 
-# svn diff #
+Sending        Hello.java
+Transmitting file data .
+Committed revision 1602.
+</pre>
 
-!SLIDE 
-# svn up (again) #
+!SLIDE bullets
+# ...and you can go home.
+* The CI server will build and test
+* Everyone else can update to your changes
 
-!SLIDE 
-# svn commit -m#
+!SLIDE bullets
+# But later...
+* We merge some changes from the server
 
-!SLIDE 
-# svn up (later) #
-* Nice clean merge
+!SLIDE bullets
+# svn update
+* (svn up)
 
-!SLIDE 
-# svn up (more later) #
-* Conflicts
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn up
+
+U    Hello.java
+Updated to revision 1603.
+</pre>
+
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn log
+
+------------------------------------------------------------------------
+r1603 | crosby | 2011-09-22 00:22:34 -0400 (Thu, 22 Sep 2011) | 2 lines
+
+Added separators above and below the hello msg
+
+------------------------------------------------------------------------
+r1602 | crosby | 2011-09-22 00:10:35 -0400 (Thu, 22 Sep 2011) | 1 line
+
+Printing current date/time along with Hello World
+------------------------------------------------------------------------
+r1599 | crosby | 2011-09-20 21:14:12 -0400 (Tue, 20 Sep 2011) | 1 line
+
+Added CHANGELOG area to README.txt
+...
+</pre>
+
+!SLIDE bullets
+# svn diff -rXXXX:YYYY
+* Specify revisions to compare
+
+!SLIDE
+<pre style="font-size: 16pt">
+$ svn diff -r 1602:1603
+
+Index: Hello.java
+===================================================================
+--- Hello.java	(revision 1602)
++++ Hello.java	(revision 1603)
+@@ -2,6 +2,8 @@
+ 
+ class Hello {
+   public static void main(String args[]) {
++    System.out.println("-------------------------------------------------------------------------------");
+     System.out.println("Hello, World, the time is " + new Date());
++    System.out.println("-------------------------------------------------------------------------------");
+   }
+ }
+</pre>
+
+!SLIDE
+# Append some output
+<pre style="font-size: 16pt">
+    ...
+    System.out.println("Thanks!");
+    ...
+</pre>
+
+!SLIDE
+# Attempt to commit...
+<pre style="font-size: 16pt">
+$ svn ci -m "Added a quick thanks to the end"
+
+Sending        Hello.java
+svn: Commit failed (details follow):
+svn: File or directory 'Hello.java' is out of date; try updating
+svn: resource out of date; try updating
+</pre>
+
+!SLIDE
+# Update to the latest code...
+<pre style="font-size: 16pt">
+$ svn up
+
+Conflict discovered in 'Hello.java'.
+Select: (p) postpone, (df) diff-full, (e) edit,
+        (mc) mine-conflict, (tc) theirs-conflict,
+        (s) show all options:
+</pre>
+
+!SLIDE
+# Edit the file
+## (Remove conflict markers)
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+    System.out.println("-------------------------------------------------
+<<<<<<< .mine
+    System.out.println("Thanks!");
+=======
+    System.out.println("Thank you very much.");
+>>>>>>> .r1604
+</pre>
+
+!SLIDE
+# Decide to keep your changes:
+<pre style="font-size: 16pt">
+    System.out.println("Hello, World, the time is " + new Date());
+    System.out.println("-------------------------------------------------
+    System.out.println("Thanks!");
+</pre>
+
+!SLIDE
+# Save and exit
+
+<pre style="font-size: 16pt">
+$ svn st
+
+?       Hello.java.mine
+?       Hello.java.r1603
+?       Hello.java.r1604
+C       Hello.java
+</pre>
+  
+!SLIDE bullets incremental
+# Mark conflict as resolved
+
+<pre style="font-size: 16pt">
+$ svn resolved Hello.java
+
+Resolved conflicted state of 'Hello.java
 
 
+$ svn st
 
-!SLIDE 
-# Conflict Resolution #
-* Look for conflict markers
-* Edit code
-* Commit
+M       Hello.java
+</pre>
+* (then commit)
 
 !SLIDE incremental bullets
 # Fancy stuff?
-* Branching
-* History
-* Revert
+* Branching / merging
+* History visualization
+* svn blame
 
 !SLIDE incremental bullets
-# (Not today)
+# (Another day)
 
 !SLIDE subsection center
 ![collabcats](collabcats.jpg)
