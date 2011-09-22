@@ -1,5 +1,6 @@
 !SLIDE center
 ![Atomic Object](AO-wordmark-color.png)
+## Everyday Source Control
 
 !SLIDE subsection
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
@@ -50,9 +51,9 @@
 
 !SLIDE incremental
 # Why?
-* Store and backup code
-* Collaborate
 * Track and document
+* Collaborate
+* Store and backup code
 
 !SLIDE incremental
 ![db](drobo.png)
@@ -210,7 +211,8 @@ Our other first choice
 * [Checkvist](http://checkvist.com)
 * [Google WebFonts](http://google.com/webfonts)
 
-!SLIDE incremental bullets
+!SLIDE bullets
 # Thanks!
-* (btw, Atomic runs a cool summer internship program)
+* {karlin,dave}@atomicobject.com
+* need a summer internship?
 * [atomicobject.com/jobs](http://atomicobject.com/jobs)
