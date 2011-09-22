@@ -28,49 +28,11 @@
 ![Subversion, Git, Mercurial, Darcs](sc_logos.png)
 
 !SLIDE
-# Subversion Samples 
+# Today: Subversion
 
-!SLIDE
-# svn checkout #
-
-!SLIDE commandline incremental
-<pre style="font-size: 24pt">
-$ svn checkout https://svnserver/sample_proj
-
-A    sample_proj/README.txt
-A    sample_proj/Hello.java
-</pre>
-
-!SLIDE
-# svn log #
-
-!SLIDE
-<pre style="font-size: 16pt">
-$ svn log
-
-------------------------------------------------------------------------
-r1598 | crosby | 2011-09-20 20:27:47 -0400 (Tue, 20 Sep 2011) | 1 line
-
-Sketched Hello.java
-------------------------------------------------------------------------
-r1597 | crosby | 2011-09-20 19:55:48 -0400 (Tue, 20 Sep 2011) | 1 line
-
-Starting SVN sample for Everyday Source Control
-------------------------------------------------------------------------
-</pre>
-
-!SLIDE
-# svn commit #
-
-!SLIDE 
-<pre style="font-size: 16pt">
-$ svn ci -m "Added CHANGELOG area to README.txt"
-
-Sending        README.txt
-Transmitting file data .
-Committed revision 1599.
-</pre>
-
+!SLIDE bullets
+# Later: Git
+* (We use it a lot)
 
 !SLIDE subsection
 # Significance in software development
@@ -112,7 +74,7 @@ Committed revision 1599.
 * solicit input, feedback, criticism
 * patches, forks, pull requests
 
-!SLIDE incremental bullets subsection
+!SLIDE subsection
 # How Atomic uses source control
 
 !SLIDE incremental bullets
@@ -146,10 +108,9 @@ Committed revision 1599.
 * Punching out with uncommitted code is a NO NO
 
 !SLIDE incremental bullets
-# Not just for code
+# Not just for "code"
 * Sales proposals
 * Invoices and POs
-* Critical internal documents
 * Electronic books
 
 !SLIDE incremental bullets
@@ -215,14 +176,17 @@ Committed revision 1599.
 # Git
 * Our other first choice
 
-!SLIDE subsection
+!SLIDE 
 # Git Advantages
-* 
+* TODO
 
-!SLIDE subsection
+!SLIDE 
 # Git = Independence
 * no network, no server, no perms
+* TODO moar?
 
+!SLIDE subsection
+# Links
 
 !SLIDE 
 # This presentation #
@@ -241,6 +205,7 @@ Committed revision 1599.
 * checkvist.com
 * google.com/webfonts
 
-!SLIDE
+!SLIDE incremental bullets
 # Thanks!
+* (btw, Atomic runs a cool summer internship program)
 * atomicobject.com/jobs
